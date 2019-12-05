@@ -1,4 +1,4 @@
-let cookieName = "theme";
+let themeCookieName = "theme";
 let themes = ['default', 'dark', 'candy'];
 
 $(document).ready(function(){
@@ -8,13 +8,12 @@ $(document).ready(function(){
 });
 
 function getThemeFromCookie(){    
-    let value = document.cookie.match('(^|;)\\s*' + cookieName + '\\s*=\\s*([^;]+)');
-    return value ? value.pop() : "";
+    return getCookie(themeCookieName);
 }
 
 function changeThemeTo(theme) {
     $('#theme').attr('href', 'css/themes/' + theme + '.css');
-    document.cookie = cookieName + '=' + theme;
+    setCookie(themeCookieName, theme);
 }
 
 function toggleTheme(){
