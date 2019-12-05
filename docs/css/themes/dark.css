@@ -3,5 +3,13 @@ body {
 }
 
 nav {
-    background-color: gray;
+    background-color: rgb(37, 37, 37);
+} 
+nav .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color:  rgb(104, 104, 104);
+}
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand,
+.navbar-dark div button.btn {
+    color:  rgb(197, 197, 197);
 }

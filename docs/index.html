@@ -4,46 +4,80 @@
     <title>Barefuzius</title>
     <meta name="author" content="Lukas Eck" />
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link id="theme" rel="stylesheet" type="text/css" href="" />
-    <link href="https://fonts.googleapis.com/css?family=Alegreya|Roboto|Rakkas&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya|Roboto|Rakkas&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/becff41fa6.js"
       crossorigin="anonymous"
     ></script>
   </head>
 
-  <body>
-    <nav>
-      <i class="fas fa-bars"></i>
-      <ul>
-        <li>
-          <a href="#"><i class="fas fa-home"></i> Home</a>
-        </li>
-        <li>
-          <a href="#Gallery"><i class="fas fa-camera-retro"></i> Gallery</a>
-        </li>
-        <li><a href="#LastVisits"><i class="fas fa-binoculars"></i> Last Visits</a></li>
-      </ul>
+  <body data-spy="scroll">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light sticky-top">
+      <a class="navbar-brand" href="#Home"
+        ><img id="foot-icon"
+          src=""
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        Barefuzius</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav nav nav-pills mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#Gallery"
+              ><i class="fas fa-camera-retro"></i> Gallery</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#LastVisits"
+              ><i class="fas fa-binoculars"></i> Last Visits</a
+            >
+          </li>
+        </ul>
+        <button class="btn" onclick="toggleTheme()">Change Theme</button>
+      </div>      
     </nav>
-    <header>
-      <h1>Barefuzius</h1>
-      <p>
-        Give a man a shoe, and he will have stinky feet. Teach a man to walk
-        barefoot, and his feet will be ventilated for a lifetime.
-      </p>
-    </header>
-    <content>
-          <div id="LastVisits" class="card" style="width: 18rem;">
-              <div class="card-header">
-                Your last visits
-              </div>
-              <ul id="LastVisitsContent" class="list-group list-group-flush">
-              </ul>
-            </div>
-    </content>
-    <footer><button onclick="toggleTheme()">Change Theme</button> </footer>
+    <div id="content p-2">      
+      <blockquote id="Home" class="blockquote">
+          <p class="mb-0">Give a man a shoe, and he will have stinky feet. Teach a man to walk
+              barefoot, and his feet will be ventilated for a lifetime.</p>
+          <footer class="blockquote-footer">the one and only <cite title="Source Title">Big Bad Kaya</cite></footer>
+        </blockquote>
+
+      <h2 id="Gallery">Gallery</h2>
+      <div style="height:280px"></div>
+
+      <h2 id="LastVisits">Last Visits</h2>
+      <div class="card" style="width: 18rem;">
+        <div class="card-header">
+          Your last visits
+        </div>
+        <ul id="LastVisitsContent" class="list-group list-group-flush"></ul>
+      </div>
+    </div>
+    <div id="footer" class="bg-dark fixed-bottom p-2">
+      <p class="text-light my-auto">site for educational purposes, but walk barefoot anyaway!</p>
+    </div>
   </body>
   <!-- scripts -->
   <script src="js/jquery/jquery-3.4.1.min.js"></script>
