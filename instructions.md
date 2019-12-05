@@ -7,7 +7,7 @@ machen damit sie kontrolliert und beurteilt werden kann.
 
 ### Anforderungen:
 
-1. Die natürlich selbstgemachte Webseite muss zwingend mit folgendem Metatag versehen werden wo Ihr Name drin steht: <meta name="author" content="Ihr Name steht hier">
+1. Die natürlich selbstgemachte Webseite muss zwingend mit folgendem Metatag versehen werden wo Ihr Name drin steht: `<meta name="author" content="Ihr Name steht hier">`
 
 2. Es sollte nur korrektes HTML5 angewendet werden, vor Abgabe bitte mittels des HTML5-Validators prüfen (https://validator.w3.org) keine alten depricated HTML4 Elemente verwenden!
 
