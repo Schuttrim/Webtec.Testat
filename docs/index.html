@@ -1,10 +1,42 @@
-<head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Barefuzius</title>
     <meta name="author" content="Lukas Eck" />
-    
-</head>
-<body>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link id="theme" rel="stylesheet" type="text/css" href="" />
+    <script
+      src="https://kit.fontawesome.com/becff41fa6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <i class="fas fa-bars"></i>
+      <ul>
+        <li>
+          <a href="#"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="#Gallery"><i class="fas fa-camera-retro"></i> Gallery</a>
+        </li>
+        <li><a href="#Gallery">Gallery</a></li>
+      </ul>
+    </nav>
     <header>
-        <h1>Page coming soon...</h1>
+      <h1>Barefuzius</h1>
+      <p>
+        Give a man a shoe, and he will have stinky feet. Teach a man to walk
+        barefoot, and his feet will be ventilated for a lifetime.
+      </p>
     </header>
-    
-</body>
+    <content></content>
+    <footer><button onclick="toggleTheme()">Change Theme</button> </footer>
+  </body>
+  <!-- scripts -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script src="js/jquery/jquery-3.4.1.min.js"></script>
+  <script src="js/themeswitcher.js"></script>
+</html>
