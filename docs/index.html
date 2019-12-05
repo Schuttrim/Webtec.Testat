@@ -35,14 +35,21 @@
       </p>
     </header>
     <content>
-        <h2 id="LastVisits">Your last visits</h2>
-
+          <div id="LastVisits" class="card" style="width: 18rem;">
+              <div class="card-header">
+                Your last visits
+              </div>
+              <ul id="LastVisitsContent" class="list-group list-group-flush">
+              </ul>
+            </div>
     </content>
     <footer><button onclick="toggleTheme()">Change Theme</button> </footer>
   </body>
   <!-- scripts -->
   <script src="js/jquery/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/moment-with-locales.min.js"></script>
+  <script src="js/rxjs.umd.min.js"></script>
   <script src="js/cookies.js"></script>
   <script src="js/themeswitcher.js"></script>
   <script src="js/last-visited.js"></script>
