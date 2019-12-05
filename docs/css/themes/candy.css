@@ -1,4 +1,6 @@
-
+body {
+    font-family: 'Alegreya', serif;
+}
 nav {
     background-color: pink;
 }
