@@ -2,10 +2,10 @@ let lastVisitsCookieName = 'lastVisits';
 
 $(document).ready(async function(){
     addVisit();
-    writeLastVisits();
+    displayLastVisits();
 });
 
-function writeLastVisits(){
+function displayLastVisits(){
     let liitems = new Array();
     let lastVisits = getLastVisits().sort((a, b) =>  new Date(b) - new Date(a));
     lastVisits = lastVisits.slice(1, lastVisits.length > 11 ? 11 : lastVisits.length) // take last 10 visits without the newest
@@ -29,8 +29,4 @@ function addVisit(){
     let array = getLastVisits();
     array.push((new Date()));
     setCookie(lastVisitsCookieName, JSON.stringify(array));
-}
-
-function displayLastVisits(){
-
 }
