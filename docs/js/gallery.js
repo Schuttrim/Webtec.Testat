@@ -65,7 +65,5 @@ function loadImage(path) {
 
 
 function getImagePath(imageName) {
-    var getUrl = window.location;
-    var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
-    return baseUrl + '/img/gallery/' + imageName;
+    return getBasePath() + '/img/gallery/' + imageName;
 }
