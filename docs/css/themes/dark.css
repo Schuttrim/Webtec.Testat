@@ -1,5 +1,6 @@
 body {
     font-family: 'Rakkas', cursive;
+    background-image: url(./../../img/ep_naturalblack.png);
 }
 
 nav {
@@ -14,7 +15,10 @@ nav .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color:  rgb(197, 197, 197);
 }
 
-canvas {
+#canvas-wrapper canvas {
     background: linear-gradient(45deg,#40545a 0% 20%, #0b0c0e);
-    width: 100%;
+  }
+
+  #main {
+      background: linear-gradient(113deg, gray, white);
   }

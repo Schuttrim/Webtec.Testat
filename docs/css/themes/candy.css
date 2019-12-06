@@ -1,5 +1,6 @@
 body {
     font-family: 'Alegreya', serif;
+    background-image: url(./../../img/bananas.png);
 }
 nav {
     background-color: pink;
@@ -8,7 +9,10 @@ nav .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     background-color: lightpink;
 }
 
-canvas {
+#canvas-wrapper canvas {
     background: linear-gradient(45deg,rgb(246, 212, 242) 0% 20%, #7a0657);
-    width: 100%;
+  }
+
+  #main {
+      background: linear-gradient(113deg, pink, white);
   }
