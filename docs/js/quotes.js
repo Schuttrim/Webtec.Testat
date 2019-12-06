@@ -27,7 +27,7 @@
  });
 
  function writeQuotes(quotes) {
-    let root = $('#Quotes');
+    let root = $('#Quotes-Body');
     quotes.forEach(quote => {
         root.append('<blockquote id="Home" class="blockquote"><p class="mb-0">' + quote.text + 
         '</p><footer class="blockquote-footer">' + quote.originIntro + '<cite title="Source Title">' + quote.origin + '</cite></footer></blockquote>')
