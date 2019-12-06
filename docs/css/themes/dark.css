@@ -13,3 +13,8 @@ nav .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
 .navbar-dark div button.btn {
     color:  rgb(197, 197, 197);
 }
+
+canvas {
+    background: linear-gradient(45deg,#40545a 0% 20%, #0b0c0e);
+    width: 100%;
+  }

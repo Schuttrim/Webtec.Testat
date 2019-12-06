@@ -7,3 +7,8 @@ nav {
 nav .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     background-color: lightpink;
 }
+
+canvas {
+    background: linear-gradient(45deg,rgb(246, 212, 242) 0% 20%, #7a0657);
+    width: 100%;
+  }

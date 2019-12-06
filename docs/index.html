@@ -48,31 +48,47 @@
               ><i class="fas fa-camera-retro"></i> Gallery</a
             >
           </li>
+        </li><li class="nav-item">
+            <a class="nav-link" href="#Carrot"
+              ><i class="fas fa-carrot"></i> Carrot uhh canvas</a
+            >
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#LastVisits"
               ><i class="fas fa-binoculars"></i> Last Visits</a
-            >
-          </li>
+            ></li>
         </ul>
         <button class="btn" onclick="toggleTheme()">Change Theme</button>
       </div>      
     </nav>
-    <div id="content p-2">      
-      <blockquote id="Home" class="blockquote">
-          <p class="mb-0">Give a man a shoe, and he will have stinky feet. Teach a man to walk
-              barefoot, and his feet will be ventilated for a lifetime.</p>
-          <footer class="blockquote-footer">the one and only <cite title="Source Title">Big Bad Kaya</cite></footer>
-        </blockquote>
+    <div id="content">      
+      <div id="content-element">
+          <blockquote id="Home" class="blockquote">
+              <p class="mb-0">Give a man a shoe, and he will have stinky feet. Teach a man to walk
+                  barefoot, and his feet will be ventilated for a lifetime.</p>
+              <footer class="blockquote-footer">the one and only <cite title="Source Title">Big Bad Kaya</cite></footer>
+            </blockquote>
+      </div>
 
-      <h2 id="Gallery">Gallery</h2>
-      <div style="height:280px"></div>
+      <div id="content-element">
+        <h2 id="Gallery">Gallery</h2>
+        <div style="height:280px"></div>
+      </div>
+      
+      <div id="content-element">
+        <h2 id="Carrot">Carrots thing...</h2>
+        <img id="carrot-img" src="img/carrot.png" class="collapse"/>
+        <canvas id="Canvas" height="200px"></canvas>
+      </div>
 
+      <div id="content-element">
       <h2 id="LastVisits">Last Visits</h2>
       <div class="card" style="width: 18rem;">
         <div class="card-header">
           Your last visits
         </div>
         <ul id="LastVisitsContent" class="list-group list-group-flush"></ul>
+      </div>
       </div>
     </div>
     <div id="footer" class="bg-dark fixed-bottom p-2">
@@ -83,8 +99,8 @@
   <script src="js/jquery/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/moment-with-locales.min.js"></script>
-  <script src="js/rxjs.umd.min.js"></script>
   <script src="js/cookies.js"></script>
   <script src="js/themeswitcher.js"></script>
   <script src="js/last-visited.js"></script>
+  <script src="js/canvas.js"></script>
 </html>

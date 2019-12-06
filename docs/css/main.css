@@ -4,6 +4,9 @@ body {
 }
 
 
-#content {
-}
+canvas {
+    background: linear-gradient(45deg,#40545a 0% 20%, #163486);
+    width: 100%;
+    height: 500px;
+  }
 
