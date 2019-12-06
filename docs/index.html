@@ -63,7 +63,7 @@
         </div>      
       </nav>
       <div id="content">      
-        <div id="content-element">
+        <div class="content-element">
             <blockquote id="Home" class="blockquote">
                 <p class="mb-0">Give a man a shoe, and he will have stinky feet. Teach a man to walk
                     barefoot, and his feet will be ventilated for a lifetime.</p>
@@ -71,18 +71,22 @@
               </blockquote>
         </div>
   
-        <div id="content-element">
+        <div class="content-element">
           <h2 id="Gallery">Gallery</h2>
-          <div style="height:280px"></div>
+          <button id="Gallery-Previous" class="btn"><i class="fas fa-chevron-left"></i></button>
+          <button id="Gallery-Next" class="btn"><i class="fas fa-chevron-right"></i></button>
+          <div id="Gallery-Content">
+            <img id="Gallery-Image" src="img/gallery/02.jpg"/>
+          </div>
         </div>
         
-        <div id="content-element">
+        <div class="content-element">
           <h2 id="Carrot">Carrots thing...</h2>
           <img id="carrot-img" src="img/carrot.png" class="collapse"/>
           <div id="canvas-wrapper"><canvas id="Canvas" height="200px"></canvas></div>
         </div>
   
-        <div id="content-element">
+        <div class="content-element">
         <h2 id="LastVisits">Last Visits</h2>
         <div class="card" style="width: 18rem;">
           <div class="card-header">
@@ -105,4 +109,5 @@
   <script src="js/themeswitcher.js"></script>
   <script src="js/last-visited.js"></script>
   <script src="js/canvas.js"></script>
+  <script src="js/gallery.js"></script>
 </html>
